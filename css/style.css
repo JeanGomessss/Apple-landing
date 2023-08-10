@@ -109,32 +109,32 @@ header {
 }
 
 .product {
+    padding-top: 100px;
     width: 512px;
-    height: 100%;
-    padding: 50px
+    height: auto;
 }
 
-.product img {
-    width: 250px;
+.iphone {
+    width: 512px;
 }
 
 /*Fim CSS conteúdo*/
 
-@media (max-width:425px) {
+@media (max-width:575px) {
     .topo-link{
        display: none; 
     } 
 
     .limita-secao {
-        width: 50%;
+        width: 60%;
     }
 
     .topo{
         justify-content: center;
     }
-    
-    .info img {
-        width: 120px;
+
+    .iphone {
+        width: 200px;
     }
 
 }
@@ -177,8 +177,11 @@ header {
 
     .product{
         padding-top: 0;
-        width: 300px;
+        text-align: center;
     }
 
+    .iphone {
+        width: 350px
+    }
 
 }
