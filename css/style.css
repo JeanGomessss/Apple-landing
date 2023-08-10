@@ -18,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 55px;
     display: flex;
     justify-content: center;
 }
@@ -29,8 +29,8 @@ header {
 }
 
 .topo {
-    width: 100%;
-    height: 100%;
+    width: 1024px;
+    height: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -62,16 +62,17 @@ header {
 /*Início CSS conteúdo */
 
 .info {
-    width:100%;
-    height: 100%;
-    padding: 180px 0px 100px 40px;
+    width: 100%;
+    height: auto;
     display: flex;
+    padding: 150px 0;
     justify-content: space-between;
 }
 
 .info-title {
-    padding: 10px;
-    width: 512px
+    margin: 0;
+    padding: 50px;
+    width: 100%;
 }
 
 .info-title h1 {
@@ -84,10 +85,7 @@ header {
 
 .info-title p {
     width: 400px;
-    margin: 0 20px;
     text-align: justify;
-    padding-left: 20px;
-    display: flex;
 }
 
 .info-title a{
@@ -112,82 +110,75 @@ header {
 
 .product {
     width: 512px;
-    height: 500px;
-    padding-left: 150px
+    height: 100%;
+    padding: 50px
 }
 
-.info img {
-    width: 300px;
+.product img {
+    width: 250px;
 }
 
 /*Fim CSS conteúdo*/
 
-.rodape {
-    position: fixed;
-    height: 40px;
-    rotate: 90deg;
-    right:-100px;
-    top: 350px;
-}
-
 @media (max-width:425px) {
-    .rodape {
-        display: none;
+    .topo-link{
+       display: none; 
+    } 
+
+    .limita-secao {
+        width: 50%;
     }
 
-    .topo {
-        flex-direction: column;
+    .topo{
         justify-content: center;
-        align-items: center;
-        text-align: center;
     }
-
-    .info img{
-        width: 300px;
+    
+    .info img {
+        width: 120px;
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+    .limita-secao {
+        width: 70%;
+    }
+
     .topo-link a{
         font-size: 15px;
     }
 
     .info {
-        padding: 20px 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
+       width: 100%;
+       height: auto;
+       flex-direction: column;
+       align-items: center;
     }
 
-    .info-title h1 {
+    .info-title {
+        padding: 0;
+        text-align: center;
+    }
+
+    .info-title h1{
         font-size: 30px;
     }
-    .info-title h2 {
-        font-size: 20px;
+
+    .info-title h2{
+        font-size: 25px;
     }
 
-    .info-title p {
-        font-size: 15px;
+    .info-title p{
+        display:none;
     }
-
     .info-title a{
-        font-size: 10px;
-        padding: 3px 10px;
+        padding-bottom: 0;
     }
 
-    .info img{
-        width: 280px;
+    .product{
+        padding-top: 0;
+        width: 300px;
     }
 
-    .product {
-        height: 250px;
-        padding: 0;
-    }
 
-    .botao {
-        margin: 10px auto;
-    }
 }
