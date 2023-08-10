@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*Início CSS cabeçalho*/
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.limita-secao {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-logo {
+    width: 50px;
+    height: 60px;
+    margin-left: 25px;
+}
+
+.topo-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.topo-link a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* Fim CSS cabeçalho*/
+
+
+/*Início CSS conteúdo */
+
+.info {
+    width:100%;
+    height: 100%;
+    padding: 180px 0px 100px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title {
+    padding: 10px;
+    width: 512px
+}
+
+.info-title h1 {
+    font-size: 50px;
+}
+
+.info-title h2{
+    font-size: 35px;
+}
+
+.info-title p {
+    width: 400px;
+    margin: 0 20px;
+    text-align: justify;
+    padding-left: 20px;
+    display: flex;
+}
+
+.info-title a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 3px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.botao {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.info-title a:hover {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.product {
+    width: 512px;
+    height: 500px;
+    padding-left: 150px
+}
+
+.info img {
+    width: 300px;
+}
+
+/*Fim CSS conteúdo*/
+
+.rodape {
+    position: fixed;
+    height: 40px;
+    rotate: 90deg;
+    right:-100px;
+    top: 350px;
+}
+
+@media (max-width:425px) {
+    .rodape {
+        display: none;
+    }
+
+    .topo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info img{
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .topo-link a{
+        font-size: 15px;
+    }
+
+    .info {
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .info-title h1 {
+        font-size: 30px;
+    }
+    .info-title h2 {
+        font-size: 20px;
+    }
+
+    .info-title p {
+        font-size: 15px;
+    }
+
+    .info-title a{
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+
+    .info img{
+        width: 280px;
+    }
+
+    .product {
+        height: 250px;
+        padding: 0;
+    }
+
+    .botao {
+        margin: 10px auto;
+    }
+}
